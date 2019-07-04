@@ -1,0 +1,75 @@
+.background {
+    -fx-background-color: #E6E6E6;
+}
+
+.label-title {
+    -fx-font-size: 30.0pt;
+    -fx-background-color: #E6E6E6;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+    -fx-padding: 50px;
+}
+
+.label-sub_title {
+    -fx-font-size: 20.0pt;
+    -fx-background-color: #E6E6E6;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-sub_title_bottom {
+    -fx-font-size: 15.0pt;
+    -fx-background-color: #E6E6E6;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-creation_label {
+    -fx-font-size: 13.0pt;
+    -fx-background-color: #E6E6E6;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-small {
+    -fx-font-size: 20.0pt;
+    -fx-background-color: #E6E6E6;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.button-menu {
+    -fx-font-size: 23.0pt;
+    -fx-background-color: #06193C;;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.button-creation {
+    -fx-font-size: 13.0pt;
+    -fx-background-color: #06193C;;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.grid-display {
+    -fx-border-color: black;
+}
+
+.information-label {
+    -fx-font-size: 20.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ff4a16;
+    -fx-opacity: 0.6;
+}

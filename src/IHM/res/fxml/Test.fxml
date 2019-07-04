@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="386.0" styleClass="background" stylesheets="@../css/Theme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IHM.TestController">
+    <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <center>
+
+        </center>
+        <top>
+            <GridPane BorderPane.alignment="CENTER">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="23.0" minHeight="6.0" prefHeight="6.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <Label styleClass="label-sub_title" text="Choisissez un algorithme à tester :" GridPane.rowIndex="1" />
+                </children>
+            </GridPane>
+        </top>
+        <center>
+            <GridPane prefHeight="255.0" prefWidth="386.0" BorderPane.alignment="CENTER">
+                <columnConstraints>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+               <JFXButton  onAction="#launchRoundRobin" layoutX="75.0" layoutY="64.0" styleClass="button-menu" text="RoundRobin" GridPane.columnIndex="1" />
+               <JFXButton  onAction="#launchSJF" layoutX="75.0" layoutY="64.0" prefHeight="59.0" prefWidth="193.0" styleClass="button-menu" text="SJF" GridPane.rowIndex="1" />
+               <JFXButton  onAction="#launchSRJF" layoutX="75.0" layoutY="64.0" prefHeight="59.0" prefWidth="193.0" styleClass="button-menu" text="SRJF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <JFXButton  onAction="#launchFIFO" layoutX="203.0" layoutY="51.0" prefHeight="59.0" prefWidth="193.0" styleClass="button-menu" text="FIFO" />
+                </children>
+            </GridPane>
+        </center>
+      <bottom>
+         <GridPane BorderPane.alignment="CENTER">
+           <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <JFXButton fx:id="back" onAction="#backAction" styleClass="button-creation" text="Retour au menu" GridPane.rowIndex="1" />
+            </children>
+         </GridPane>
+      </bottom>
+    </BorderPane>
+</AnchorPane>

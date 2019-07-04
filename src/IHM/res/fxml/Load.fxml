@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="386.0" styleClass="background" stylesheets="@../css/Theme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IHM.LoadController">
+    <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <bottom>
+            <GridPane BorderPane.alignment="CENTER">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <JFXButton onAction="#loadAction" styleClass="button-menu" text="Charger le fichier" />
+               <JFXButton fx:id="back" onAction="#backAction" prefHeight="49.0" prefWidth="165.0" styleClass="button-creation" text="Retour au menu" GridPane.rowIndex="2" />
+                </children>
+            </GridPane>
+        </bottom>
+        <center>
+
+        </center>
+      <top>
+         <GridPane BorderPane.alignment="CENTER">
+           <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="24.0" minHeight="0.0" prefHeight="24.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="23.0" minHeight="6.0" prefHeight="6.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Label styleClass="label-title" text="Veuillez choisir un fichier XML" GridPane.rowIndex="1" />
+            </children>
+         </GridPane>
+      </top>
+      <center>
+         <GridPane prefHeight="201.0" prefWidth="386.0" BorderPane.alignment="CENTER">
+           <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <JFXButton fx:id="chooser" onAction="#chooseAction" styleClass="button-menu" text="Parcourir ..." />
+               <Label fx:id="fileChosen" alignment="CENTER" styleClass="label-small" GridPane.rowIndex="1" />
+               <Label fx:id="errorLabel" alignment="CENTER" styleClass="information-label" GridPane.rowIndex="1" />
+            </children>
+         </GridPane>
+      </center>
+    </BorderPane>
+</AnchorPane>

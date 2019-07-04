@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listOfProcessus id="1"><!---Début de la liste des processus!-->
+    <process> <!---Processus 1-->
+        <name>Processus 1</name> <!---Nom du processus!-->
+        <start>0</start> <!-- Temps auquel le processus commence !-->
+        <listOfInOut> <!---Durée de la phase entrée sortie!-->
+            <time>4</time>
+            <time>3</time>
+        </listOfInOut>
+        <listOfRessource>
+            <time>3</time>
+            <time>2</time>
+            <time>3</time>
+        </listOfRessource><!---Durée de la phase utilisation de l'UC!-->
+    </process>
+    <process> <!---Processus 2-->
+        <name>Processus 2</name>
+        <start>1</start> <!-- Temps auquel le processus commence !-->
+        <listOfInOut> <!---Durée de la phase entrée sortie!-->
+            <time>2</time>
+            <time>1</time>
+        </listOfInOut>
+        <listOfRessource>
+            <time>1</time>
+            <time>4</time>
+            <time>4</time>
+        </listOfRessource><!---Durée de la phase utilisation de l'UC!-->
+    </process>
+</listOfProcessus>

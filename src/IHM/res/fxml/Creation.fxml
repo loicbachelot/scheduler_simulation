@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="386.0" styleClass="background" stylesheets="@../css/Theme.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IHM.CreationController">
+    <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+            <GridPane BorderPane.alignment="CENTER">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="122.0" minWidth="0.0" prefWidth="13.0" />
+                    <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="175.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="194.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <Label alignment="CENTER" styleClass="label-creation_label" text="Nom du processus :" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <font>
+                            <Font size="19.0" />
+                        </font>
+                    </Label>
+                    <Label styleClass="label-creation_label" text="Temps de départ :" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <font>
+                            <Font size="19.0" />
+                        </font>
+                    </Label>
+                    <JFXTextField fx:id="Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                    <JFXTextField fx:id="Time" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                </children>
+            </GridPane>
+        </top>
+        <bottom>
+            <GridPane BorderPane.alignment="CENTER">
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <JFXButton onAction="#createProcessus" styleClass="button-creation" text="Créer le processus" GridPane.rowIndex="2" />
+               <JFXButton fx:id="back" layoutX="317.0" layoutY="39.0" onAction="#backAction" styleClass="button-creation" text="Retour au menu" GridPane.rowIndex="4" />
+               <JFXButton onAction="#addAction" styleClass="button-creation" text="Ajouter une ES et un UC" />
+                </children>
+            </GridPane>
+        </bottom>
+        <center>
+            
+        </center>
+      <center>
+         <GridPane BorderPane.alignment="CENTER">
+           <columnConstraints>
+             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <Label fx:id="msg" styleClass="information-label" text="Double cliquez sur une case pour modifier sa valeur et pressez ENTRÉE" />
+               <TableView fx:id="table" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="60.0" prefWidth="200.0" GridPane.rowIndex="2">
+         </TableView>
+               <Label fx:id="error" styleClass="information-label" GridPane.rowIndex="1" />
+            </children>
+         </GridPane>
+      </center>
+    </BorderPane>
+</AnchorPane>
